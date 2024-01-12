@@ -1,4 +1,5 @@
 import bg from '../public/images/bg.png'
+import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
           style={{ filter: 'brightness(0.5)' }}
 
         />
-        <Navbar/>
+        <Navbar />
+        <Hero/>
         
       </div>
     </div>
