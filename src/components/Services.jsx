@@ -1,6 +1,6 @@
 import { FaReact } from "react-icons/fa";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
-import wave from '/public/images/wave.gif'
+import wave from '/images/wave.gif'
 const ServiceData = [
   {
     title: "Space Discovery",

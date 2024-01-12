@@ -1,10 +1,27 @@
-import bg from '../public/images/bg.png'
+import React from 'react'
+import bg from '/images/bg.png'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Satellite from './components/Satellite'
 import Services from './components/Services'
 import SpaceCast from './components/SpaceCast'
+import { AOS } from "aos";
+import 'aos/dist/aos.css'
+
+
+//Aos
 
 const App = () => {
+  React.useEffect(() => {
+    setTimeout(() => {
+      AOS.init({
+        duration: 1200,
+        easing: "ease-in-out",
+      });
+    }); // Adjust the delay as needed
+  });
+
   return (
     <div>
       <div className='h-[700px] relative'>
@@ -20,7 +37,9 @@ const App = () => {
         
       </div>
       <Services />
-      <SpaceCast/>
+      <SpaceCast />
+      <Satellite />
+      <Footer/>
     </div>
   )
 }

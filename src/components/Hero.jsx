@@ -1,11 +1,11 @@
-import moon1 from '/public/images/moon1.png'
+import moon1 from '/images/moon1.png'
 const Hero = () => {
   return (
     <div className="bg-black/20 h-full text-white relative z-50">
       <div className="h-full flex justify-center items-center p-4">
         <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-4 lg:pr-36">
-            <h1 className="font-bold text-5xl">The Earth</h1>
+            <h1  className="font-bold text-5xl">The Earth</h1>
             <p>
               With us you can explore the unknown in air and space, innovates
               for the benefit of humanity, and inspires the world through

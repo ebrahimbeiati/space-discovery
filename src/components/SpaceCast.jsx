@@ -1,4 +1,4 @@
-import SpaceCast1 from '/public/images/SpaceCast1.png'
+import SpaceCast1 from '/images/SpaceCast1.png'
 const SpaceCast = () => {
   return (
       <div className="bg-black text-white pb-12 relative z-50">
@@ -6,7 +6,7 @@ const SpaceCast = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
                   <div>
                       <img src={SpaceCast1} alt=""
-                          className="w-full  object-cover"/>
+                          className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover"/>
                   </div>
                   <div className='space-y-3 xl:pr-36 p-4 border-r-2  border-b-2  border-r-sky-800 border-b-sky-800'>
                       <p>Space Voice</p>
