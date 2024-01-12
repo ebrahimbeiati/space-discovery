@@ -2,6 +2,7 @@ import bg from '../public/images/bg.png'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
+import SpaceCast from './components/SpaceCast'
 
 const App = () => {
   return (
