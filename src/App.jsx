@@ -6,11 +6,13 @@ import Navbar from './components/Navbar'
 import Satellite from './components/Satellite'
 import Services from './components/Services'
 import SpaceCast from './components/SpaceCast'
+
+import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
+
 import { AOS } from "aos";
 import 'aos/dist/aos.css'
 
 
-//Aos
 
 const App = () => {
   React.useEffect(() => {
@@ -23,7 +25,12 @@ const App = () => {
   });
 
   return (
-    <div>
+    <Router>
+      <Routes>
+        <Route exact path="/" component={Hero} />
+        <Route exact path="/home" component={Hero} />
+       
+      </Routes>
       <div className='h-[700px] relative'>
 
         <img src={bg} alt=""
@@ -39,8 +46,9 @@ const App = () => {
       <Services />
       <SpaceCast />
       <Satellite />
-      <Footer/>
-    </div>
+      <Footer />
+   
+    </Router>
   )
 }
 

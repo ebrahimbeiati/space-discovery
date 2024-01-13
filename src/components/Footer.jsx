@@ -1,6 +1,7 @@
 import { HiLocationMarker } from "react-icons/hi";
 import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 import { HiPhone } from "react-icons/hi";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-gray-800 text-white px-5  ">
@@ -29,16 +30,22 @@ const Footer = () => {
               <h1 className="text-xl font-bold mb-3">Quick Links</h1>
               <ul className="text-sm sm:text-lg font-medium">
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <Link
+                    to="https://www.nasa.gov/about/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    About
+                  </Link>
                 </li>
+
                 <li>
-                  <a href="">Services</a>
-                </li>
-                <li>
-                  <a href="">Portfolio</a>
+                  <Link to="https://portfolio-ebrahim-beiatiasl.netlify.app/" rel="noreferrer" target="_blank">
+                    Portfolio
+                  </Link>
                 </li>
               </ul>
             </div>

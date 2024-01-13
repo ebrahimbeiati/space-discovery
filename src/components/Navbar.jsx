@@ -127,6 +127,7 @@
 
 import { useState } from "react";
 import logo from "/images/logo.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -194,14 +195,28 @@ export default function NavBar() {
                   <a href="javascript:void(0)">Home</a>
                 </li>
                 <li className="text-gray-400 hover:text-blue-600">
-                  <a href="https://www.nasa.gov/nasa-blogs/" rel="noreferrer" target="_blank">Blog</a>
+                  <a
+                    href="https://www.nasa.gov/nasa-blogs/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Blog
+                  </a>
                 </li>
-                <li className="text-gray-400 hover:text-blue-600">
-                  <a href="javascript:void(0)">About US</a>
+                <Link
+                  to="https://www.nasa.gov/about/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <li className="text-gray-400 hover:text-blue-600">About</li>
+                </Link>
+                <Link to="https://www.nasa.gov/contact/" rel="noreferrer" target="_blank"> <li className="text-gray-400 hover:text-blue-600">
+                 Contact Nasa
                 </li>
-                <li className="text-gray-400 hover:text-blue-600">
-                  <a href="javascript:void(0)">Contact US</a>
-                </li>
+               
+                </Link>
+
+               
               </ul>
             </div>
           </div>
