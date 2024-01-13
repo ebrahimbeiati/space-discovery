@@ -12,9 +12,15 @@ const Satellite = () => {
               You can join the Nasa website to explore the beauty of the
               universe.
             </p>
-            <button className="text-white border-2 gap-4 border-white rounded-md px-3 py-1 items-center flex justify-center hover:bg-blue-500 mt-4">
-              Join
-            </button>
+            <a
+              href="https://www.flickr.com/photos/nasa2explore/with/53413219945"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="text-white border-2 gap-4 border-white rounded-md px-3 py-1 items-center flex justify-center hover:bg-blue-500 mt-4">
+                Explore
+              </button>
+            </a>
           </div>
           <div>
             <img
@@ -23,10 +29,8 @@ const Satellite = () => {
               className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover"
             />
           </div>
-              </div>
-          </div>
-       
-              
+        </div>
+      </div>
     </div>
   );
 }
