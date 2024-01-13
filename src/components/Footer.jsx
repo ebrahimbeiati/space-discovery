@@ -1,5 +1,5 @@
 import { HiLocationMarker } from "react-icons/hi";
-import { FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { HiPhone } from "react-icons/hi";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -43,7 +43,11 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <Link to="https://portfolio-ebrahim-beiatiasl.netlify.app/" rel="noreferrer" target="_blank">
+                  <Link
+                    to="https://portfolio-ebrahim-beiatiasl.netlify.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     Portfolio
                   </Link>
                 </li>
@@ -80,14 +84,22 @@ const Footer = () => {
         </div>
         <div>
           <div className="flex gap-4 items-center">
-            <a href="">
+            <a
+              href="https://www.instagram.com/nasa/"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaInstagram className="text-4xl" />
             </a>
-            <a href="">
+            <a
+              href="https://www.facebook.com/NASA"
+              rel="noreferrer"
+              target="_blank"
+            >
               <FaFacebook className="text-4xl" />
             </a>
-            <a href="">
-              <FaLinkedin className="text-4xl" />
+            <a href="https://twitter.com/NASA" rel="noreferrer" target="_blank">
+              <FaTwitter className="text-4xl" />
             </a>
           </div>
         </div>
